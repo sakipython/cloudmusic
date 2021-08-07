@@ -1,8 +1,14 @@
 import React from 'react';
+import Loading from '../../baseUI/loading';
 
 
 export default function Rank (props) {
     return (
-        <div> Rank </div>
+        <div>
+             <div> Rank </div>
+             <Loading>...</Loading>
+        </div>
+       
+        
     )
 }
