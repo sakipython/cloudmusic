@@ -1,3 +1,5 @@
+/*
+
 import { createStore, compose, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import reducer from './reducer'
@@ -8,3 +10,16 @@ const store = createStore (reducer, composeEnhancers (
 ));
 
 export default store;
+
+*/
+
+import { configureStore } from "@reduxjs/toolkit";
+import recommendReducer from "../application/Recommend/store/recommendSlice"
+
+export default configureStore(
+  {
+    reducer: {
+      recommend: recommendReducer
+    }
+  }
+)
